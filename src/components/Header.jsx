@@ -1,8 +1,10 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
+
 export default function Header() {
+  const navigate = useNavigate();
   const handleClick = () => {
     sessionStorage.removeItem("logged-in");
-    window.location.reload()
+    navigate("/")
   }
   return (
     <header>

@@ -9,7 +9,12 @@ export async function getVans(id) {
     }
   }
   const data = await res.json();
-  return data;
+  if(id) {
+    return data.van
+  }
+  else {
+    return data.vans;
+  }
 }
 
 export async function getHostVans(hostId, id) {
@@ -23,7 +28,12 @@ export async function getHostVans(hostId, id) {
     }
   }
   const data = await res.json();
-  return data;
+  if(id) {
+    return data.van
+  }
+  else {
+    return data.vans;
+  }
 }
 
 export async function loginUser(creds) {
