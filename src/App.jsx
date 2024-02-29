@@ -19,6 +19,7 @@ import HostVanDetails, {loader as hostVanDetailsLoader} from "./pages/host/HostV
 import Details from "./pages/host/Details";
 import Pricing from "./pages/host/Pricing";
 import Photos from "./pages/host/Photos";
+import ErrorElement from "./components/ErrorElement";
 
 import "../src/server"
 
@@ -43,21 +44,25 @@ const router = createBrowserRouter([
         path: "login",
         element: <Login />,
         loader: loginLoader,
+        errorElement: <ErrorElement />
       },
       {
         path: "vans",
         element: <Vans />,
-        loader: vansLoader
+        loader: vansLoader,
+        errorElement: <ErrorElement />
       },
       {
         path: "vans/:id",
         element: <VanDetails />,
-        loader: vanDetailsLoader
+        loader: vanDetailsLoader,
+        errorElement: <ErrorElement />
       },
       {
         path: "",
         element: <AuthRequired />,
         loader: authRequiredLoader,
+        errorElement: <ErrorElement />,
         children: [
           {
             path: "host/:hostId",
@@ -78,12 +83,14 @@ const router = createBrowserRouter([
               {
                 path: "vans",
                 element: <HostVans />,
-                loader: hostVansLoader
+                loader: hostVansLoader,
+                errorElement: <ErrorElement />,
               },
               {
                 path: "vans/:id",
                 element: <HostVanDetails />,
                 loader: hostVanDetailsLoader,
+                errorElement: <ErrorElement />,
                 children: [
                   {
                     path: "",

@@ -39,7 +39,7 @@ header {
   padding: 6px;
   font-weight: 500;
   color: white;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 a {
@@ -394,5 +394,16 @@ footer {
 }
 
 .login p {
+  font-weight: 500;
+}
+
+.error-container {
+  background-color: #FFF7ED;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+pre {
   font-weight: 500;
 }
