@@ -12,7 +12,7 @@ export default function Header() {
         <img className="logo" src="/images/logo.png" alt="VanLife Logo"/>
       </NavLink>
       <nav className="header-nav">
-        <NavLink to="host/123" className={({isActive}) => {return isActive ? "active-link" : null}}>
+        <NavLink to={`host/${123}`} className={({isActive}) => {return isActive ? "active-link" : null}}>
           <h3>Host</h3>
         </NavLink>
         <NavLink to="about" className={({isActive}) => {return isActive ? "active-link" : null}}>

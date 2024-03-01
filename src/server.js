@@ -64,7 +64,7 @@ createServer({
             foundUser.password = undefined
             return {
                 user: foundUser,
-                token: "Enjoy your pizza, here's your tokens."
+                token: "Enjoy your pizza, here are your tokens."
             }
         })        
     }

@@ -5,13 +5,13 @@ import {
   defer,
   useLoaderData
 } from "react-router-dom";
-import {getHostVans} from "../../api"
+import {getVan} from "../../api"
 import { Suspense } from "react";
 
 export async function loader({params}) {
-  const hostId = params.hostId
+  // const hostId = params.hostId
   const id = params.id
-  return defer({van: getHostVans(hostId, id)}) 
+  return defer({van: getVan(id)}) 
 }
 
 export default function HostVanDetails() {

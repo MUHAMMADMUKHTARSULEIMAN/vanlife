@@ -27,7 +27,7 @@ export async function loader({request}) {
 export default function Login() {
   const data = useLoaderData()
   const message = data.get("message")
-  const pathname = data.get("redirectTo") || "/host/123"
+  const pathname = data.get("redirectTo") || `/host/${123}`
   const navigate = useNavigate()
   // const errorMessage = useActionData()
   const [form, setForm] = useState({
