@@ -21,7 +21,7 @@ import Pricing from "./pages/host/Pricing";
 import Photos from "./pages/host/Photos";
 import ErrorElement from "./components/ErrorElement";
 
-import "../src/server"
+// import "../src/server"
 
 const router = createBrowserRouter([
   {

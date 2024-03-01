@@ -5,12 +5,12 @@ import {
   Await,
   defer
 } from "react-router-dom";
-import { getVans } from "../../api";
+import { getVan } from "../../api";
 import { Suspense } from "react";
 
 export async function loader({params}) {
   const id = params.id
-  return defer({van: getVans(id)}) 
+  return defer({van: getVan(id)}) 
 }
 
 export default function VanDetails() {
