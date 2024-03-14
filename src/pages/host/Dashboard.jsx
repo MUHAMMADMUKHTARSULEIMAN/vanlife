@@ -6,8 +6,8 @@
 
 export default function Dashboard() {
   return (
-    <>
-      <h1>Dashboard goes here</h1>
-    </>
+    <div className="dashboard-container">
+      <img src="/images/dashboard.png" alt="dashboard"/>
+    </div>
   )
 }

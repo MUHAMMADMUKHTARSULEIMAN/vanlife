@@ -407,3 +407,11 @@ footer {
 pre {
   font-weight: 500;
 }
+
+.dashboard-container, .income-container, .reviews-container {
+  margin: 0;
+}
+
+.dashboard-container img, .income-container img, .reviews-container img {
+  width: 100%;
+}

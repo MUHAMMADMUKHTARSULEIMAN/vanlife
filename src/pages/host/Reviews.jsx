@@ -6,8 +6,8 @@
 
 export default function Reviews() {
   return (
-    <>
-      <h1>Reviews goes here</h1>
-    </>
+    <div className="reviews-container">
+      <img src="/images/reviews.png" alt="reviews"/>
+    </div>
   )
 }
