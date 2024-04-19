@@ -18,8 +18,9 @@ export default function VanDetails() {
   // const vanDetails = data.van
 
   const location = useLocation();
-  console.log(location)
+  // console.log(location)
   const search = location.state?.search
+  // console.log(search)
 
 
 
@@ -40,7 +41,7 @@ export default function VanDetails() {
           }
           return (
             <>
-              <NavLink to={`../vans/${search}`}>
+              <NavLink to={`../vans/?${search}`}>
                 <div className="back-to-all-vans-container">
                   <span>&larr; </span>
                   <span className="back-to-all-vans">Back to {search ? vanDetails.type : "all"} vans</span>
